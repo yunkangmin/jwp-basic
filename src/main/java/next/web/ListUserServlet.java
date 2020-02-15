@@ -14,7 +14,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import core.db.DataBase;
-import next.model.User;
 
 //회원가입 후 나타나는 유저목록 페이지
 @WebServlet("/user/list") 

@@ -14,7 +14,7 @@
 		<link href="/css/styles.css" rel="stylesheet">
 	</head>
 	<body>
-<nav class="navbar navbar-fixed-top header">
+<nav class="navbar navbar-fixed-top header"> 
  	<div class="col-md-12">
         <div class="navbar-header">
 

@@ -16,7 +16,7 @@
                         <th scope="row">${status.count}</th>
                         <td>${user.userId}</td>
                         <td>${user.name}</td>
-                        <td>${user.email}</td>
+                        <td>${user.email}</td> 
                         <td> 
                             <!--el태그는 기본이 requestScopre이다.  -->
                         	<c:if test="${sessionScope.user.userId eq user.userId }">

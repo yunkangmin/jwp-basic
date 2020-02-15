@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
+ 
 import core.db.DataBase;
 
 //회원가입 후 나오는 list.jsp에서 수정버튼을 클릭할 시 해당 아이디로 사용자 정보를 가져와서 요청객체에 세팅한다.

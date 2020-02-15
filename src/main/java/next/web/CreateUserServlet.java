@@ -16,7 +16,7 @@ import org.slf4j.LoggerFactory;
 import core.db.DataBase;
 
 //회원정보를 입력한 후 회원가입 버튼을 클릭할 시
-@WebServlet("/user/create") 
+@WebServlet("/user/create")  
 public class CreateUserServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
     private static final Logger log = LoggerFactory.getLogger(CreateUserServlet.class);

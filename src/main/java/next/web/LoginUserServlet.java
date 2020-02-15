@@ -10,13 +10,13 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import core.db.DataBase;
-import next.model.User;
+import next.model.User; 
 
 //로그인 시
 @WebServlet("/user/login") 
 public class LoginUserServlet extends HttpServlet{
 	private static final long serialVersionUID = 1L;
-
+ 
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		//파라미터에서 아이디를 가져온다.

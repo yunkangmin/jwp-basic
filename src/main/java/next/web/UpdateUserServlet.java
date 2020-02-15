@@ -15,7 +15,7 @@ import org.slf4j.LoggerFactory;
 
 import core.db.DataBase;
 
-//실제 회원정보 수정작업이 이루어지는 곳
+//실제 회원정보 수정작업이 이루어지는 곳 
 @WebServlet("/user/update")
 public class UpdateUserServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;

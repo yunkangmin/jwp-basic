@@ -6,7 +6,7 @@
           <ul class="list">
               <li>
                   <div class="wrap">
-                      <div class="main">
+                      <div class="main"> 
                           <strong class="subject">
                               <a href="./qna/show.html">국내에서 Ruby on Rails와 Play가 활성화되기 힘든 이유는 뭘까?</a>
                           </strong>
