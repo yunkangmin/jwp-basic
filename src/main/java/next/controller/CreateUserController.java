@@ -15,17 +15,20 @@ import org.slf4j.LoggerFactory;
 import core.db.DataBase;
 import next.model.User;
 
+///users/create ->회원가입 화면으로 이동 , /users/form ->회원가입 버튼 클릭 시
 @WebServlet(value = { "/users/create", "/users/form" })
 public class CreateUserController extends HttpServlet {
     private static final long serialVersionUID = 1L;
     private static final Logger log = LoggerFactory.getLogger(CreateUserController.class);
-
+    
+    //회원가입 화면으로 이동시키는 작업을 하는 메서드
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         RequestDispatcher rd = req.getRequestDispatcher("/user/form.jsp");
         rd.forward(req, resp);
     }
 
+    //회원가입 버튼을 클릭하면 작동하는 메서드
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         User user = new User(req.getParameter("userId"), req.getParameter("password"), req.getParameter("name"),
