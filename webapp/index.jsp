@@ -20,7 +20,7 @@
                               <span class="point">8</span>
                           </div>
                       </div>
-                  </div>
+                  </div> 
               </li>
               <li>
                   <div class="wrap">

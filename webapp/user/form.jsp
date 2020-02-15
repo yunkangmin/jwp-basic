@@ -24,7 +24,7 @@
               <div class="clearfix" />
           </form>
         </div>
-    </div>
+    </div> 
 </div>
 
 <!-- script references -->

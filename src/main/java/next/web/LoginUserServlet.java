@@ -13,7 +13,7 @@ import core.db.DataBase;
 import next.model.User;
 
 //로그인 시
-@WebServlet("/user/login")
+@WebServlet("/user/login") 
 public class LoginUserServlet extends HttpServlet{
 	private static final long serialVersionUID = 1L;
 

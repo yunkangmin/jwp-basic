@@ -17,7 +17,7 @@ import core.db.DataBase;
 import next.model.User;
 
 //회원가입 후 나타나는 유저목록 페이지
-@WebServlet("/user/list")
+@WebServlet("/user/list") 
 public class ListUserServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
     private static final Logger logger = LoggerFactory.getLogger(ListUserServlet.class);

@@ -28,7 +28,7 @@
           </form>
         </div>
     </div>
-</div>
+</div> 
 
 <!-- script references -->
 <script src="../js/jquery-2.2.0.min.js"></script>
