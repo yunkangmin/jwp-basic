@@ -15,19 +15,20 @@ import org.slf4j.LoggerFactory;
 
 import core.db.DataBase;
 
-//회원정보를 입력한 후 회원가입 버튼을 클릭할 시
-@WebServlet("/user/create")
-public class CreateUserServlet extends HttpServlet {
+//실제 회원정보 수정작업이 이루어지는 곳
+@WebServlet("/user/update")
+public class UpdateUserServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
-    private static final Logger log = LoggerFactory.getLogger(CreateUserServlet.class);
+    private static final Logger log = LoggerFactory.getLogger(UpdateUserServlet.class);
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         User user = new User(req.getParameter("userId"), req.getParameter("password"), req.getParameter("name"),
                 req.getParameter("email"));
         log.debug("user : {}", user);
+        //데이터베이스에 유저객체를 추가한다. 기존에 같은 아이디로 된 유저객체가 있으면 덮어씌운다.
         DataBase.addUser(user);
-       
+        
         resp.sendRedirect("/user/list");
     }
 }
